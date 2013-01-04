@@ -7,6 +7,7 @@ exports.construct = ({ endpoint, jQuery }) ->
   (method, params, callback) ->
     jQuery.ajax
       dataType: 'jsonp'
+      cache: true
       url: endpoint + '/' + method + '?' + argsToQueryString(params)
       jsonp: 'callback'
       error: (data) -> callback(data)

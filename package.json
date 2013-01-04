@@ -1,7 +1,7 @@
 {
   "name": "jsonrpc-http-browser-client",
   "description": "JSON-RPC 2.0 client targeting the browser using HTTP as transport layer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/client.js",
   "dependencies": {
   },
