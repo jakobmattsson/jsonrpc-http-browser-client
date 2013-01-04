@@ -1,0 +1,22 @@
+{
+  "name": "jsonrpc-http-browser-client",
+  "description": "JSON-RPC 2.0 client targeting the browser using HTTP as transport layer",
+  "version": "0.1.0",
+  "main": "./lib/client.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "should": "1.2.1",
+    "coffee-script": "1.4.0",
+    "mocha": "1.7.4"
+  },
+  "engines": {
+    "npm": ">= 1.1",
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "pretest": "coffee -co lib src",
+    "prepublish": "coffee -co lib src",
+    "test": "mocha --compilers coffee:coffee-script tests/*.coffee"
+  }
+}
